@@ -1,0 +1,98 @@
+.guide {
+	padding: 130px 0 100px 0;
+
+	background-color: #fff;
+
+	@media (max-width: 1189px) {
+		padding: 90px 0 60px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 60px 0 60px 0;
+	}
+
+	// .guide__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+
+		@media (max-width: 1189px) {
+			justify-content: center;
+		}
+	}
+
+	// .guide__img
+
+	&__img {
+		flex: 0 0 50%;
+		img {
+			max-width: 100%;
+		}
+
+		@media (max-width: 1189px) {
+			display: none;
+		}
+	}
+
+	// .guide__content
+
+	&__content {
+		flex: 0 1 auto;
+
+		margin: 0px 100px 0px 0px;
+		padding: 150px 0px 0px 0px;
+
+		@media (max-width: 1189px) {
+			flex: 0 1 600px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	// .guide__col
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+
+		@media (max-width: 1189px) {
+			align-items: center;
+		}
+	}
+
+	// .guide__heading
+
+	&__heading {
+		width: 350px;
+		margin: 0px 0px 20px 0px;
+
+		font-size: 36px;
+		line-height: 50px;
+
+		@media (max-width: 1189px) {
+			text-align: center;
+			width: auto;
+		}
+
+		@media (max-width: 575px) {
+			font-size: 28px;
+			line-height: 42px;
+		}
+	}
+
+	// .guide__text
+
+	&__text {
+		margin: 0px 0px 30px 0px;
+
+		font-size: 17px;
+		line-height: 30px;
+		color: #7D7987;
+
+		@media (max-width: 1189px) {
+			text-align: center;
+		}
+	}
+}

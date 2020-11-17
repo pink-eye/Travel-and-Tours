@@ -1,0 +1,71 @@
+@import "_header";
+@import "_finder";
+@import "_description";
+@import "_destinations";
+@import "_guide";
+@import "_testimonials";
+@import "_stories";
+@import "_footer";
+@import "_popup";
+
+* {
+	transition: all .3s ease-in-out;
+}
+
+body {
+	transition: 0s;
+	background-color: #fff;
+}
+
+.container {
+	max-width: 1190px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.heading {
+	font-family: "Playfair Display";
+	font-weight: bold;
+
+	color: #202336;
+}
+
+.title {
+	font-family: "Inter";
+	font-weight: 600;
+	color: #202336;
+}
+
+.text {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 300;
+}
+
+.btn {
+	padding: 8px 35px;
+
+		background: #FB8F1D;
+		border: 1px solid #FB8F1D;
+		border-radius: 8px;
+
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+
+		color: #fff;
+
+		cursor: pointer;
+
+
+		@media (min-width: 993px) {
+			&:hover {
+				background: #fff;
+				border: 1px solid #FB8F1D;
+	
+				color: #FB8F1D;
+			}	
+		}
+}

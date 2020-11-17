@@ -1,0 +1,295 @@
+.testimonials {
+	padding: 130px 0 100px 0;
+
+	background-color: #fff;
+
+	@media (max-width: 1189px) {
+		padding: 90px 0 60px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 60px 0 60px 0;
+	}
+
+	// .testimonials__heading
+
+	&__heading {
+		font-size: 36px;
+
+		@media (max-width: 1189px) {
+			text-align: center;
+		}
+
+		@media (max-width: 575px) {
+			font-size: 28px;
+			line-height: 42px;
+		}
+	}
+}
+
+
+.swiper {
+	overflow: hidden;
+
+	height: auto;
+	padding: 60px 0px 0px 0px;
+
+	// .swiper__col
+
+	&__col {
+		flex: 0 1 450px;
+
+		padding: 100px 0px 0px 0px;
+
+		@media (max-width: 961px) {
+			flex: 1 1 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			margin: 60px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+		}
+
+		@media (max-width: 575px) {
+			margin: 40px 0px 0px 0px;
+		}
+	}
+
+	// .swiper__rating
+
+	&__rating {
+		display: inline-flex;
+		flex-direction: row-reverse;
+	}
+
+	&__rating[data-total-value="1"] &__star:nth-child(n + 5),
+	&__rating[data-total-value="2"] &__star:nth-child(n + 4),
+	&__rating[data-total-value="3"] &__star:nth-child(n + 3),
+	&__rating[data-total-value="4"] &__star:nth-child(n + 2),
+	&__rating[data-total-value="5"] &__star:nth-child(n + 1) {
+		path {
+			fill: #ffbb0c;
+		}
+	}
+	// .swiper__star
+
+	&__star {
+		cursor: pointer;
+
+		path {
+			fill: #dcdcdc;
+		}
+
+		&:not(:first-child) {
+			margin: 0px 15px 0px 0px;
+		}
+
+		&:hover,
+		&:hover ~ & {
+			path {
+				fill: #706f6b;
+			}
+		}
+	}
+
+	// .swiper__comment
+
+	&__comment {
+		margin: 30px 0px 0px 0px;
+
+		font-size: 24px;
+		line-height: 36px;
+		color: #000;
+
+		@media (max-width: 961px) {
+			text-align: center;
+
+			margin: 30px 0px 0px 0px;
+		}
+
+		@media (max-width: 575px) {
+			margin: 15px 0px 0px 0px;
+
+			font-size: 20px;
+			line-height: 32px;
+		}
+	}
+
+	// .swiper__human
+
+	&__human {
+		@media (max-width: 961px) {
+			display: none;
+		}
+	}
+
+	// .swiper__name
+
+	&__name {
+		margin: 40px 0px 0px 0px;
+
+		font-weight: bold;
+		font-size: 22px;
+
+		@media (max-width: 961px) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	// .swiper__job
+
+	&__job {
+		margin: 15px 0px 0px 0px;
+
+		font-size: 18px;
+		color: rgba(0, 0, 0, 0.85);
+
+		@media (max-width: 961px) {
+			margin: 7px 0px 0px 0px;
+		}
+
+		@media (max-width: 575px) {
+			max-width: 165px;
+
+			font-size: 17px;
+		}
+	}
+
+	// .swiper__img
+
+	&__img {
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+
+		width: 384px;
+		height: 491px;
+
+		border-radius: 20px;
+
+		@media (max-width: 961px) {
+			display: flex;
+			justify-content: center;
+
+			border-radius: 20px 20px 20px 0;
+		}
+
+		@media (max-width: 575px) {
+			width: 261px;
+			height: 333px;
+		}
+
+		// img{
+		// 	display: block;
+
+		// 	border-radius: 20px;
+		// 	max-width: 100%;
+		// }
+	}
+
+	&__description {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: none;
+
+		border-radius: 0 20px 0 0;
+
+		@media (max-width: 961px) {
+			display: block;
+
+			padding: 20px 20px 0 0;
+		}
+	}
+}
+.swiper-container {
+	position: relative;
+}
+.swiper-wrapper {
+	display: flex;
+	overflow: hidden;
+}
+
+.swiper-slide-active {
+	opacity: 1 !important;
+}
+
+.swiper-slide-active {opacity: 1;}
+
+.swiper-slide {
+	display: flex;
+	justify-content: space-between;
+
+	opacity: 0;
+
+	@media (max-width: 961px) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
+
+.swiper-nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+
+	padding: 20px 0 0 30px;
+	border-radius: 20px 0 0 0;
+
+	background-color: #fff;
+
+	@media (max-width: 961px) {
+		position: relative;
+
+		padding: 0;
+		margin: 20px 0px 0px 0px;
+
+		text-align: center;
+	}
+}
+
+.swiper-button-disabled {
+	cursor: auto !important;
+
+	path {
+		stroke-width: #fff !important;
+		stroke: #d7d7d7 !important;
+	}
+
+	circle {
+		stroke: #d7d7d7 !important;
+	}
+}
+
+.swiper-button-prev {
+	margin: 0px 20px 0px 0px;
+
+	background-color: #fff;
+
+	cursor: pointer;
+
+	path {
+		stroke-width: #fff !important;
+		stroke: #000;
+	}
+
+	circle {
+		stroke: #000;
+	}
+}
+.swiper-button-next {
+
+	background-color: #fff;
+	cursor: pointer;
+
+	path {
+		stroke-width: #fff !important;
+		stroke: #000;
+	}
+
+	circle {
+		stroke: #000;
+	}
+}

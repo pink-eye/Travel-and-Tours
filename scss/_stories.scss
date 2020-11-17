@@ -1,0 +1,179 @@
+.stories {
+	padding: 130px 0 60px 0;
+
+	background-color: #fff;
+
+	@media (max-width: 1189px) {
+		padding: 90px 0 20px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 60px 0 20px 0;
+	}
+
+	// .stories__wrapper
+
+	&__wrapper {
+	}
+
+	// .stories__head
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+
+		@media (max-width: 1189px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	// .destinations__heading
+
+	&__heading {
+		font-size: 36px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+	// .destinations__link
+
+	&__link {
+		position: relative;
+
+		padding: 0px 15px 0px 0px;
+
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 17px;
+
+		color: #fb8f1d;
+
+		cursor: pointer;
+
+		@media (max-width: 1189px) {
+			margin: 30px 0px 0px 0px;
+		}
+
+		@media (max-width: 767px) {
+			margin: 15px 0 0 0;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 4.5px;
+			right: 0;
+
+			width: 6px;
+			height: 11px;
+
+			background: url(../img/destinations/destinations__arrow.svg);
+		}
+
+		@media (min-width: 993px) {
+			&:hover::before {
+				width: 100%;
+			}
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+
+				height: 2px;
+				width: 0;
+
+				background-color: #fb8f1d;
+
+				transition: all 0.3s ease-in-out 0s;
+			}
+		}
+	}
+
+	// .stories__body
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		margin: 50px -12px 0 -12px;
+
+		@media (max-width: 1190px) {
+			justify-content: center;
+		}
+	}
+
+	// .stories__card
+
+	&__card {
+		flex: 0 0 261px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+
+		margin: 0 12px 40px 12px;
+
+		cursor: pointer;
+
+		@media (min-width: 993px) {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+
+	// .stories__img
+
+	&__img {
+		overflow: hidden;
+
+		width: 261px;
+		height: 233px;
+		border-radius: 8px 8px 0 0;
+	}
+
+	// .stories__title
+
+	&__title {
+		margin: 10px 0px 0px 0px;
+
+		font-size: 19px;
+		line-height: 30px;
+		font-weight: 700 !important;
+	}
+
+	// .stories__text
+
+	&__text {
+		margin: 15px 0px 0px 0px;
+
+		font-family: "Inter";
+		font-size: 16px;
+		line-height: 26px;
+		color: #7d7987;
+	}
+
+	// .stories__ref
+
+	&__ref {
+		position: relative;
+
+		margin: 23px 0px 0px 0px;
+
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+
+		color: #fb8f1d;
+
+		cursor: pointer;
+	}
+}
